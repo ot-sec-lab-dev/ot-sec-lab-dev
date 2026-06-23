@@ -1,0 +1,131 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a7946fc1-f1a1-4e6a-ad42-c0148343f12d",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://feodotracker.abuse.ch/downloads/ipblocklist.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        224,
+        0
+      ],
+      "id": "1458d9d1-e09d-432c-ba9c-c4179c32a424",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f7a23c25-a10e-4e68-a892-a8b5811de99d",
+              "name": "ip",
+              "value": "={{ $json.ip_address }}",
+              "type": "string"
+            },
+            {
+              "id": "cdc9ef15-1d4f-4347-af20-903401761cc8",
+              "name": "malware",
+              "value": "={{ $json.malware }}",
+              "type": "string"
+            },
+            {
+              "id": "d10fdad3-9099-4bb2-9958-7df99d33a892",
+              "name": "estado",
+              "value": "={{ $json.status }}",
+              "type": "string"
+            },
+            {
+              "id": "095e875a-9cb6-41f1-8916-a9d79482d360",
+              "name": "pais",
+              "value": "={{ $json.country }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        448,
+        0
+      ],
+      "id": "aa3a248b-fa16-4cce-8866-dec266a8a85b",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -64,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "fdabef85-d1f6-4a17-a09a-2ad435f8b572",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -64,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "8040adbc-704e-45c5-b3c8-12de27036b53",
+      "name": "Sticky Note1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "050e05db-54d7-4f95-9d8d-d2142c91c464",
+  "meta": {
+    "instanceId": "50df9942f8d778005a12cf285c904a6d23e31f3222ba0a90bad9a83083ddeca1"
+  },
+  "nodeGroups": [],
+  "id": "mMt4a2jF7ipOYXZX",
+  "tags": []
+}
