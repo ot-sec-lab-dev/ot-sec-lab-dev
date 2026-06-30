@@ -132,11 +132,22 @@ ot-sec-lab-dev/
 
 └── README.md
 
+## Current implementation
+
+**Phase 1 — n8n IOC Collector**
+
+![n8n workflow](docs/screenshots/n8n-workflow-feodo-tracker.png)
+![Feodo Tracker IOCs](docs/screenshots/feodo-tracker-iocs.png)
+
+**Phase 2 — MISP**
+
+![MISP events dashboard](docs/screenshots/misp-events-dashboard.png)
+
 
 ## Roadmap
 
 - [x] Phase 1: n8n — IOC collection workflow (Feodo Tracker / abuse.ch)
-- [ ] Phase 2: MISP — IOC sharing and tagging platform
+- [x] Phase 2: MISP — IOC sharing and tagging platform (deployed on Hetzner Cloud)
 - [ ] Phase 3: TheHive + Cortex — case management and alert triage
 - [ ] Phase 4: OpenCTI — threat intelligence knowledge graph
 - [ ] End-to-end walkthrough: OSINT → IOC → MISP → OpenCTI → TheHive case
