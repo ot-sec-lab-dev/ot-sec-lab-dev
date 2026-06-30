@@ -53,15 +53,7 @@ OSINT Feeds ─▶│   Python IOC     │
 
 └─────────────────┘
 
-### Current implementation
 
-#### n8n Workflow
-
-![n8n Workflow](docs/screenshots/n8n-workflow-feodo-tracker.png)
-
-#### Feodo Tracker IOCs
-
-![Feodo Tracker IOCs](docs/screenshots/feodo-tracker-iocs.png)
 
 ## Components
 
