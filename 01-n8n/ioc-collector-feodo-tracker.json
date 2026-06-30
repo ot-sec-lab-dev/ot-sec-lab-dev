@@ -88,6 +88,54 @@
       "typeVersion": 1,
       "id": "8040adbc-704e-45c5-b3c8-12de27036b53",
       "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://167.233.192.138/events/add",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "6YNWDHj4eEs331whJd98QdQObrSHEg8buaHouTyz"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"Event\": {\n    \"info\": \"Feodo Tracker IOC Collection - n8n automated\",\n    \"threat_level_id\": \"2\",\n    \"analysis\": \"1\",\n    \"distribution\": \"0\",\n    \"Attribute\": {{ JSON.stringify($json.iocs.map(item => ({\n      type: \"ip-dst\",\n      category: \"Network activity\",\n      value: item.ip,\n      comment: `Malware: ${item.malware} | Status: ${item.estado} | Country: ${item.pais}`\n    }))) }}\n  }\n}",
+        "options": {
+          "allowUnauthorizedCerts": true
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        656,
+        0
+      ],
+      "id": "c6995093-f815-4063-a165-382b123e7722",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "destinationFieldName": "iocs",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        800,
+        144
+      ],
+      "id": "debb7941-d727-43f7-b004-f05c10e28bf2",
+      "name": "Aggregate"
     }
   ],
   "pinData": {},
@@ -113,6 +161,28 @@
           }
         ]
       ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
@@ -121,7 +191,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "050e05db-54d7-4f95-9d8d-d2142c91c464",
+  "versionId": "73ec59b4-eac1-41c6-ab5b-d8251fd8979b",
   "meta": {
     "instanceId": "50df9942f8d778005a12cf285c904a6d23e31f3222ba0a90bad9a83083ddeca1"
   },
