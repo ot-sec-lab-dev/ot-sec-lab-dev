@@ -135,6 +135,8 @@ ot-sec-lab-dev/
 
 ![MISP events dashboard](docs/screenshots/misp-events-dashboard.png)
 
+![MISP event with grouped IOCs](docs/screenshots/misp-event-grouped-iocs.png)
+
 
 ## Roadmap
 
@@ -142,6 +144,7 @@ ot-sec-lab-dev/
 - [x] Phase 2: MISP — IOC sharing and tagging platform (deployed on Hetzner Cloud)
 - [ ] Phase 3: TheHive + Cortex — case management and alert triage
 - [ ] Phase 4: OpenCTI — threat intelligence knowledge graph
+- [x] n8n → MISP integration: automated IOC ingestion via REST API (single event, grouped attributes, auto-correlation)
 - [ ] End-to-end walkthrough: OSINT → IOC → MISP → OpenCTI → TheHive case
 - [ ] ATT&CK for ICS mapping examples
 - [ ] Kibana dashboards for IOC volume and source breakdown
