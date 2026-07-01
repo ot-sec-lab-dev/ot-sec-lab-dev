@@ -138,11 +138,15 @@ ot-sec-lab-dev/
 ![MISP event with grouped IOCs](docs/screenshots/misp-event-grouped-iocs.png)
 
 
+**Phase 3 — TheHive + Cortex**
+
+![TheHive cases dashboard](docs/screenshots/thehive-cases-dashboard.png)
+
 ## Roadmap
 
 - [x] Phase 1: n8n — IOC collection workflow (Feodo Tracker / abuse.ch)
 - [x] Phase 2: MISP — IOC sharing and tagging platform (deployed on Hetzner Cloud)
-- [ ] Phase 3: TheHive + Cortex — case management and alert triage
+- [x] Phase 3: TheHive + Cortex — case management and alert triage (deployed on Hetzner Cloud)
 - [ ] Phase 4: OpenCTI — threat intelligence knowledge graph
 - [x] n8n → MISP integration: automated IOC ingestion via REST API (single event, grouped attributes, auto-correlation)
 - [ ] End-to-end walkthrough: OSINT → IOC → MISP → OpenCTI → TheHive case
