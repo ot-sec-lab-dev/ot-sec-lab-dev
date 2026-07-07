@@ -33,6 +33,14 @@ This project documents the design, deployment and operation of a complete Threat
 
 Architecture diagrams and deployment documentation will be available in this repository.
 
+## Live Platform
+
+### OpenCTI Observable
+
+> Example of a real IOC imported, enriched and correlated inside OpenCTI.
+
+![OpenCTI Observable](screenshots/opencti-observable.png)
+
 ## Roadmap
 
 - [x] MISP deployment
