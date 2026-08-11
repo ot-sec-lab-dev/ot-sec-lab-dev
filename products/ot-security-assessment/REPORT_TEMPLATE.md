@@ -1,8 +1,6 @@
-# OT SECURITY ASSESSMENT REPORT
+# SENTRA OT — OT SECURITY ASSESSMENT
 
----
-
-# Executive Summary
+## Executive Summary
 
 Company:
 
@@ -10,117 +8,110 @@ Assessment Date:
 
 Consultant:
 
-Overall Risk Score:
+OT Risk Score:
 
 Risk Level:
 
 ---
 
-# Overall Maturity
+## Assessment Scope
 
-OT Governance
-
-Architecture
-
-Asset Visibility
-
-Identity Management
-
-Network Security
-
-Monitoring
-
-Incident Response
-
-Compliance
+- Architecture
+- Network Security
+- Identity & Access
+- Asset Visibility
+- Monitoring
 
 ---
 
-# Executive Findings
+## Overall Results
 
-Summary of the assessment.
+Architecture:
 
-Main business risks.
+Network Security:
 
-Critical observations.
+Identity & Access:
 
----
+Asset Visibility:
 
-# Risk Matrix
-
-Critical
-
-High
-
-Medium
-
-Low
+Monitoring:
 
 ---
 
-# Top 10 Findings
+## Executive Findings
 
-Finding 1
+Summary:
 
-Finding 2
+Main business risks:
 
-Finding 3
-
-Finding 4
-
-Finding 5
-
-Finding 6
-
-Finding 7
-
-Finding 8
-
-Finding 9
-
-Finding 10
+Critical observations:
 
 ---
 
-# Recommendations
+## Risk Matrix
 
-Immediate Actions
+Critical:
 
-Short Term
+High:
 
-Medium Term
+Medium:
 
-Long Term
-
----
-
-# Roadmap
-
-30 Days
-
-90 Days
-
-180 Days
-
-12 Months
+Low:
 
 ---
 
-# Standards
+## Top Findings
 
-IEC 62443
-
-NIST SP 800-82
-
-MITRE ATT&CK for ICS
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
 
 ---
 
-# Final Score
+## Recommendations
 
-Overall Risk:
+### Immediate Actions
 
-Overall Maturity:
+### Short Term
+
+### Medium Term
+
+### Long Term
+
+---
+
+## Remediation Roadmap
+
+### 30 Days
+
+### 90 Days
+
+### 180 Days
+
+### 12 Months
+
+---
+
+## Standards
+
+- IEC 62443
+- NIST SP 800-82
+- MITRE ATT&CK for ICS
+
+---
+
+## Final Assessment
+
+OT Risk Score:
+
+Risk Level:
 
 Priority:
 
