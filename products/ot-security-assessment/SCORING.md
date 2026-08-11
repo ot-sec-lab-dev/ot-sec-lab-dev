@@ -1,145 +1,48 @@
-# SCORING MODEL
+# Sentra OT Assessment V1 — Scoring Model
 
-## Maximum Score
+## Overview
 
-100
+The Sentra OT Security Assessment V1 calculates an OT Risk Score from 0 to 100.
 
----
+A higher score indicates greater cybersecurity exposure.
 
-## Architecture
+The V1 assessment evaluates five areas:
 
-20 points
+- Architecture
+- Network Security
+- Identity & Access
+- Asset Visibility
+- Monitoring
 
----
-
-Purdue Model
-
-Yes = 0
-
-Partial = 5
-
-No = 10
+Vulnerability Management, Incident Response and Compliance are not included in V1.
 
 ---
 
-OT Network Segmentation
+## Risk Score
 
-Yes = 0
-
-Partial = 5
-
-No = 10
-
----
-
-## Identity
-
-15 points
+| Score | Risk Level |
+|---:|---|
+| 0–20 | Excellent |
+| 21–40 | Good |
+| 41–60 | Needs Improvement |
+| 61–80 | High Risk |
+| 81–100 | Critical Risk |
 
 ---
 
-MFA
+# 1. Architecture
 
-Yes = 0
+Maximum weighted score: **25 points**
 
-No = 8
+Maximum raw score: **28 points**
 
----
+| Rule | Condition | Raw Score |
+|---|---|---:|
+| ARQ-001 | Purdue Model not implemented | 10 |
+| ARQ-002 | No OT DMZ | 8 |
+| ARQ-003 | Flat OT network | 10 |
 
-Shared Accounts
+### Weighted Score
 
-No = 0
-
-Yes = 7
-
----
-
-## Asset Visibility
-
-15 points
-
----
-
-Inventory
-
-Updated = 0
-
-Partial = 5
-
-None = 10
-
----
-
-Unknown Devices
-
-No = 0
-
-Yes = 5
-
----
-
-## Monitoring
-
-20 points
-
----
-
-Continuous Monitoring
-
-Yes = 0
-
-No = 10
-
----
-
-OT IDS
-
-Yes = 0
-
-No = 10
-
----
-
-## Vulnerability Management
-
-15 points
-
----
-
-Patch Management
-
-Implemented = 0
-
-Partial = 5
-
-None = 10
-
----
-
-Offline Backups
-
-Yes = 0
-
-No = 5
-
----
-
-## Incident Response
-
-15 points
-
----
-
-IR Plan
-
-Yes = 0
-
-No = 10
-
----
-
-Exercises
-
-Yes = 0
-
-No = 5
+```text
+Architecture Score = (Raw Score / 28) × 25
