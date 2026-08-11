@@ -1,65 +1,81 @@
-# OT Security Threat Intelligence Lab
+# OT/ICS Cybersecurity & Threat Intelligence Lab
 
-> Enterprise-grade Cyber Threat Intelligence and Incident Response Lab focused on OT/ICS environments.
+> Practical cybersecurity laboratory focused on Operational Technology (OT), Industrial Control Systems (ICS), threat intelligence, security assessments and automation.
 
 ## Overview
 
-This project documents the design, deployment and operation of a complete Threat Intelligence platform built with industry-standard technologies.
+This repository documents the development of a practical OT/ICS cybersecurity laboratory and the security capabilities being developed around Sentra OT.
 
-## Platform Components
+The objective is to combine threat intelligence, incident response, OT security assessment methodologies and automation into reusable technical assets for industrial and critical infrastructure environments.
+
+The lab is designed as a hands-on environment for testing technologies, documenting security workflows and developing practical cybersecurity assessment capabilities.
+
+---
+
+## What This Lab Demonstrates
+
+The project focuses on several areas of OT/ICS cybersecurity:
+
+- OT/ICS threat intelligence
+- IOC collection and processing
+- Threat intelligence platforms
+- Incident response workflows
+- OT security assessments
+- Risk identification and prioritisation
+- Network segmentation review
+- OT architecture assessment
+- Security maturity and gap analysis
+- Security automation
+- Cybersecurity reporting and remediation roadmaps
+
+The repository contains both technical laboratory components and reusable assessment/product documentation.
+
+---
+
+## Technology Stack
+
+### Threat Intelligence
 
 - MISP
 - OpenCTI
+- Feodo Tracker
+
+### Incident Response
+
 - TheHive
 - Cortex
-- XTM One
+
+### Automation
+
+- n8n
+
+### Infrastructure
+
 - Docker
-- Elasticsearch
+- PostgreSQL
 - Redis
 - RabbitMQ
-- PostgreSQL
+- Elasticsearch
 
-## Current Capabilities
+### OT/ICS Security Frameworks
 
-- IOC collection and sharing
-- Threat Intelligence enrichment
-- Incident management
-- Observable analysis
-- Threat hunting
-- Intelligence correlation
-- OT/ICS focused workflows
+- IEC 62443
+- NIST SP 800-82
+- MITRE ATT&CK for ICS
 
-## Architecture
+---
 
-Architecture diagrams and deployment documentation will be available in this repository.
+# Laboratory Components
 
-## Live Platform
+## 01 — n8n
 
-### OpenCTI Observable
+The automation component of the laboratory.
 
-> Example of a real IOC imported, enriched and correlated inside OpenCTI.
+Current work includes an IOC collection workflow using Feodo Tracker.
 
-![OpenCTI Observable](screenshots/opencti-observable.png)
+The workflow demonstrates how threat intelligence data can be collected and processed automatically as part of an OT/ICS security workflow.
 
-## Roadmap
+Directory:
 
-- [x] MISP deployment
-- [x] OpenCTI deployment
-- [x] TheHive deployment
-- [x] Cortex deployment
-- [x] OpenCTI ↔ Cortex integration
-- [ ] n8n orchestration
-- [ ] SOAR automation
-- [ ] Detection engineering
-- [ ] Purple Team scenarios
-
-## Author
-
-Cybersecurity Engineer specialized in:
-
-- Threat Intelligence
-- OT/ICS Cybersecurity
-- Incident Response
-- Security Operations
-- Docker Infrastructure
-
+```text
+01-n8n/
