@@ -1,21 +1,58 @@
-# Sentra OT Knowledge Base
+# \# Sentra OT Knowledge Base V1
 
-Current Rules
+# 
 
-Architecture: 3
+# \## Current Rules
 
-Network: 3
+# 
 
-Identity: 3
+# Architecture: 3
 
-Assets: 3
+# 
 
-Monitoring: 3
+# Network Security: 3
 
-Vulnerabilities: Pending
+# 
 
-Incident Response: Pending
+# Identity \& Access: 3
 
-Compliance: Pending
+# 
 
-Total Rules: 15
+# Asset Visibility: 3
+
+# 
+
+# Monitoring: 3
+
+# 
+
+# \---
+
+# 
+
+# \## Pending Areas
+
+# 
+
+# Vulnerability Management: Pending
+
+# 
+
+# Incident Response: Pending
+
+# 
+
+# Compliance: Pending
+
+# 
+
+# \---
+
+# 
+
+# \## Total Active Rules
+
+# 
+
+# 15
+
