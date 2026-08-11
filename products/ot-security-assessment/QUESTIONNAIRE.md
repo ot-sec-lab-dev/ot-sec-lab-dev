@@ -69,3 +69,41 @@
 14. Are engineering workstations inventoried?
 
 15. Are unmanaged devices identified?
+
+---
+
+## Section 4 – Identity & Access
+
+16. Are privileged accounts individually assigned?
+
+- Yes
+- No
+
+17. Is Multi-Factor Authentication enabled for privileged access?
+
+- Yes
+- No
+
+18. Are inactive accounts regularly reviewed and removed?
+
+- Yes
+- No
+
+---
+
+## Section 5 – Monitoring
+
+19. Is OT infrastructure continuously monitored?
+
+- Yes
+- No
+
+20. Is industrial anomaly detection implemented?
+
+- Yes
+- No
+
+21. Are OT security events centrally logged?
+
+- Yes
+- No
